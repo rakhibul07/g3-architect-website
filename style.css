@@ -16,12 +16,13 @@
     border-radius: 8px;
     background: #FF900E;
     cursor: pointer;
+    
 }
 
 /* header section style */
 header {
     background-color: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 50px 100px;
 }
 
 nav {
@@ -50,6 +51,9 @@ nav li {
 nav li a {
     text-decoration: none;
     color: #424242;
+}
+nav ul a:hover{
+    color: #FF900E;
 }
 
 /* banner style */
@@ -88,7 +92,7 @@ main {
     display: flex;
     align-items: center;
 
-  
+
 }
 
 .team-img-container {
@@ -108,7 +112,7 @@ main {
     font-weight: 500;
 }
 
-#of {
+.of {
     color: #131313;
     font-size: 2.5rem;
     font-weight: 700;
@@ -126,11 +130,57 @@ main {
 
 }
 
+/* fact section style */
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-title{
+    color:  #727272;
+font-size: 1.2rem;
+font-weight: 600;
 
+}
+.box-number{
+    font-size: 2.8rem;
+    color: #424242;
+   margin: 0;
+}
 
+.box {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 0px;
+}
 
+/* sponsor section style */
+.sponsor{
+    text-align: center;
+}
+#description{
+    max-width: 542px;
+    text-align: center;
+    margin: 5px auto;
 
+}
+.sponsor-img{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    opacity: .5;
+}
 
+/* footer section style */
+.footer{
+    background-color: #FFF4E7;
+    color: #424242;
+    padding: 35px 350px;
+    max-width: 1400px;
+    margin: 0 100px;
+    text-align: center;
+}
 
 
 
@@ -143,19 +193,43 @@ main {
         padding: 20px;
     }
 
-    nav , .team-container{
+    nav,
+    .team-container,
+    .sponsor-img {
         flex-direction: column;
     }
-    .team-img-container{
+.sponsor-img {
+    padding: 20px;
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+    .team-img-container {
         grid-template-columns: 1fr;
     }
-   #team{
-     padding-right: 20px;
-     padding-left: 20px;
-     
+
+    #team {
+        padding-right: 20px;
+        padding-left: 20px;
+
     }
-   
-   
+    .box-container{
+        flex-direction: column;
+        gap: 20px;
+      
+    }
+    .box{
+        padding: 20px;
+    }
+    .footer{
+        padding: 5px;
+        margin: 5px;
+        font-size: .8rem;
+    }
+
+
+
 }
 
 /* tablet device */
@@ -167,13 +241,23 @@ main {
     nav {
         flex-direction: column;
     }
-    .team-container{
+
+    .team-container {
         flex-direction: column-reverse;
 
     }
-    .team-img-container{
+
+    .team-img-container {
         margin-top: 20px;
     }
-  
+    .box-container{
+       
+        flex-direction: column;
+        gap: 20px;
+      
+    }
+    .box{
+        padding: 40px;
+    }
 
 }
